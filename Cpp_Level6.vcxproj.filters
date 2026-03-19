@@ -21,5 +21,8 @@
     <ClCompile Include="02_07.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="09.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
