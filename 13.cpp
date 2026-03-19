@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
-  
+
 int main()
 {
-	cout << "Result: " << (8 & 876876);
+	cout << "Result: " << (72 & 26);
 }
