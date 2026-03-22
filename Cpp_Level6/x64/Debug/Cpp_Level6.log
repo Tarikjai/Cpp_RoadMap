@@ -1,10 +1,3 @@
-﻿  24.cpp
-C:\Users\Professional\Documents\C++\Cpp_Level6\24.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
-C:\Users\Professional\Documents\C++\Cpp_Level6\24.cpp(8,11): warning C4305: 'initializing': truncation from 'double' to 'float'
-C:\Users\Professional\Documents\C++\Cpp_Level6\24.cpp(20,9): warning C4473: 'printf' : not enough arguments passed for format string
-      C:\Users\Professional\Documents\C++\Cpp_Level6\24.cpp(20,9):
-      placeholders and their parameters expect 3 variadic arguments, but 1 were provided
-      C:\Users\Professional\Documents\C++\Cpp_Level6\24.cpp(20,9):
-      the missing variadic argument 2 is required by format string '%.3f'
-  
+﻿  25.cpp
+C:\Users\Professional\Documents\C++\Cpp_Level6\25.cpp(1,10): warning C4067: unexpected tokens following preprocessor directive - expected a newline
   Cpp_Level6.vcxproj -> C:\Users\Professional\Documents\C++\Cpp_Level6\x64\Debug\Cpp_Level6.exe
