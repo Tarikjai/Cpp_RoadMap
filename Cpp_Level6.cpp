@@ -2,21 +2,36 @@
 
 using namespace std;
 
+void input(int arr[3][3]) {
+	
+
+
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 3; j++) {
+			cout << "Entrez une valeur pour [" << i << "][" << j << "] : ";
+			cin >> arr[i][j];
+		}
+	}
+
+}
+
+void display(int arr[3][3]) {
+	
+
+
+	for (int i = 0; i < 3; i++) {
+		for (int j = 0; j < 3; j++) {
+			cout << arr[i][j]  << " " ;
+			 
+		}
+		cout << endl;
+	}
+
+}
 
 int main() {
-
-	int page, totalpages;
-
-	page = 1, totalpages = 10;
-	printf("The number of page is %d\n", page);
-	printf("The number of page is %d from %d\n", page, totalpages);
-
-	printf("The number of page is %0*d \n", 1, page);
-	printf("The number of page is %0*d \n", 2, page);
-	printf("The number of page is %0*d \n", 3, page);
-
-
-	int number1 = 20, number2 = 30;
-	printf("The result of %d + %d is %d\n", number1, number2, number1 + number2);
+	int arr[3][3];
+	input(arr);
+	display(arr);
 
 }
