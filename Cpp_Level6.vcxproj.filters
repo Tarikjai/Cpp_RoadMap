@@ -87,5 +87,14 @@
     <ClCompile Include="32.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="33.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="34.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="35_pointer.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
