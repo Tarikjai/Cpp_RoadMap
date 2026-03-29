@@ -10,28 +10,28 @@ struct Employee {
 };
 
 void ReadEmployeesInfo(vector <Employee>& vInfo) {
-	string EnterEmplyee = "Y";
+	string ReadMore = "Y";
 
-	while (EnterEmplyee == "Y" || EnterEmplyee == "y") {
-		Employee e;
+	while (ReadMore == "Y" || ReadMore == "y") {
+		Employee tempEmployee;
 
 		cout << "Please enter the employee name: " ;
-		cin >> e.Name;
+		cin >> tempEmployee.Name;
 		cout << "Please enter the employee Lastname: " ;
-		cin >> e.Lastname;
+		cin >> tempEmployee.Lastname;
 		cout << "Please enter the employee Salary: " ;
-		cin >> e.Salary;
-		vInfo.push_back(e);
+		cin >> tempEmployee.Salary;
+		vInfo.push_back(tempEmployee);
 
 		cout << "\n\nWanna add more employees (Y/N)? ";
-		cin >> EnterEmplyee;
+		cin >> ReadMore;
 		
 		cout << endl;
 	}
 }
 ;
 
-void PrintEmployeesInfo(vector <Employee>  vInfo) {
+void PrintEmployeesInfo(vector <Employee> & vInfo) {
 
 	for (Employee & i : vInfo) {
 		cout  << endl;
@@ -44,10 +44,10 @@ void PrintEmployeesInfo(vector <Employee>  vInfo) {
 
 
 int main() {
-	vector <Employee> vInfo;
+	vector <Employee> vEmployee;
 
-	ReadEmployeesInfo(vInfo);
-	PrintEmployeesInfo(vInfo);
+	ReadEmployeesInfo(vEmployee);
+	PrintEmployeesInfo(vEmployee);
 }
 
 
