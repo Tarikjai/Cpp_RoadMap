@@ -9,7 +9,9 @@ using namespace std;
 int main() {
 	 
 	int nombre = 5;
-	int* p = &nombre;
+	int* p;
+
+	p= &nombre;
 
 	cout << nombre <<endl;
 	cout << * p << endl;
