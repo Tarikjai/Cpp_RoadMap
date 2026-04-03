@@ -7,7 +7,7 @@ int main() {
 
 
 	int num;
-	cout << "Please enter the number of Student: ";
+	cout << "Please enter the number of Student   : ";
 	cin >> num;
 
 	float* ptr;
