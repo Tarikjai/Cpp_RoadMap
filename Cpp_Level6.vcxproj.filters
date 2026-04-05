@@ -138,5 +138,8 @@
     <ClCompile Include="50.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="51.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

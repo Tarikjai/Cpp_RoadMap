@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string>
+#include <cctype>
+
+
+using namespace std;
+int main()
+{
+	char x;
+	char w;
+	x = toupper('a');
+	w = tolower('A');
+	cout << "converting a to A: " << x << endl;
+	cout << "converting A to a: " << w << endl;
+
+	// Digits (A to Z)
+	// returns zero if not, and non zero of yes
+	cout << "isupper('A') " << (isupper('A') != 0) << endl;
+
+	// lower case (a to z)
+	// returns zero if not, and non zero of yes
+	cout << "islower('a') " << (islower('a') != 0) << endl;
+
+	// Digits (0 to 9)
+	// returns zero if not, and non zero of yes
+	cout << "isdigit('0') " << (isdigit('0') != 0) << endl;
+
+	// punctuation characters are !"#$%&'()*+,-./:;<=>?@[\]^_`{|}~
+	// returns zero if not, and non zero of yes
+	cout << "ispunct(';') " << (ispunct('n') != 0) << endl;
+
+	return 0;
+}
