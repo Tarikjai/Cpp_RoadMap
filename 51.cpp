@@ -1,7 +1,7 @@
 ﻿#include <iostream>
 #include <string>
 #include <cctype>
-
+#include <fstream>
 using namespace std;
 /*
 int main()
@@ -56,6 +56,94 @@ Strong Password
 لو لم تتحقق 
 اطبع Weak Password*/
 
+string AskPassword() {
+	string mdp;
+	cout << "Enter Password: ";
+	cin >> mdp;
+	return mdp;
+}
+
+
+
+bool checkUppercase(string mdp) {
+	int counter;
+	for (int i=0; i < mdp.size(); i++) {
+		if (isupper(mdp[i]) != 0) {
+			return true;
+		}
+	}
+		return false;
+};
+
+bool checkLowerCase(string mdp) {
+	
+	for (int i = 0; i < mdp.size(); i++) {
+
+		if (islower(mdp[i]) != 0) {
+			return true;
+		}
+	}
+	return false;
+};
+
+bool checkDigit(string mdp) {
+	
+	for (int i = 0; i < mdp.size(); i++) {
+
+		if (isdigit(mdp[i]) != 0) {
+			return true;
+		}
+	}
+	return false;
+};
+
+bool checkPunct(string mdp) {
+
+	for (int i = 0; i < mdp.size(); i++) {
+
+		if (ispunct(mdp[i]) != 0) {
+			return true;
+		}
+	}
+	return false;
+};
+
+bool PasswordLength()
+
+
+bool checkPassword(string mdp) {
+	if (checkUppercase(mdp) != 0 && checkLowerCase(mdp) != 0 && checkDigit(mdp) != 0 && checkPunct(mdp) != 0) {
+		return true;
+	}
+	else {
+		return false;
+	}
+}
+
+
+
+
+void PrintResult(string mdp) {
+	if (checkPassword(mdp) == true) {
+		cout << "Password conforme";
+	}
+	else {
+		cout << "Merci de saisir un mot de passe coforme";
+	}
+}
+
+void Start() {
+	bool password = false;
+	string mdp = AskPassword();
+	//do {
+	PrintResult(mdp);
+	//} while (password == false);
+}
+
+
 int main() {
+	
+
+	Start();
 
 }
