@@ -9,12 +9,12 @@ int main() {
 
 
 	fstream MyFile;
-
-	MyFile.open("text.txt", ios::out);
+	
+	MyFile.open("text.txt", ios::app);
 
 	if (MyFile.is_open()) {
-		MyFile << "Tari\n";
-		MyFile << "Sara";
+		MyFile << "\nAjout\n";
+		MyFile << "Fichier";
 
 		MyFile.close();
 	}
