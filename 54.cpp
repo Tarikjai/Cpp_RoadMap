@@ -22,7 +22,6 @@ void printFileContent(string fileName) {
 		Myfile.close();
 	}
 
-
 }
 
 int main() {
