@@ -6,7 +6,7 @@
 using namespace std;
 
 
-void PrintFileName(string FileName) {
+void LoadDataFromFileToVector(string FileName, vector <string>& vFileContent) {
 
 	fstream MyFile;
 
@@ -17,7 +17,7 @@ void PrintFileName(string FileName) {
 		string line;
 
 		while (getline(MyFile, line)) {
-			cout << line << endl;
+			vFileContent.push_back(line);
 
 		}
 		MyFile.close();
@@ -27,13 +27,17 @@ void PrintFileName(string FileName) {
 
 }
 
- 
+
 
 int main() {
 
+	vector <string> vFileContent;
 
-	 
-	PrintFileName("teste.txt");
-	
-	 
+	LoadDataFromFileToVector("teste.txt", vFileContent);
+
+	for (const string& line : vFileContent) {
+		cout << line;
+	}
+
+
 }
