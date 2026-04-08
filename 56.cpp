@@ -9,16 +9,24 @@ using namespace std;
 void LoadDataFromVectorToFile(string FileName, vector <string>& vFileContent) {
 
 	fstream MyFile;
-	MyFile.open(FileName, ios::in);
+	MyFile.open(FileName, ios::out);
+
+	string line;
 
 	if (MyFile.is_open()) {
 
-		string line;
+		
 
-		while (getline(MyFile, line)) {
 
-			vFileContent.push_back(line);
+		for (string& i : vFileContent) {
+
+
+			MyFile << i  << endl;
+
+
 		}
+		MyFile.close();
+		 
 	}
 
 
@@ -29,13 +37,10 @@ void LoadDataFromVectorToFile(string FileName, vector <string>& vFileContent) {
 
 int main() {
 
-	vector <string> vFileContent;
+	vector <string> vFileContent = {"Ahmed", "Ali","Rabii","Salem"};
 
 	LoadDataFromVectorToFile("text.txt", vFileContent);
 
-
-	for (string &i : vFileContent) {
-		cout << i << " ";
-	}
+	 
 
 }
