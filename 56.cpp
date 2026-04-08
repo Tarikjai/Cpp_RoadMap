@@ -6,22 +6,22 @@
 using namespace std;
 
 
-void LoadDataFromVectorToFile(string FileName, vector <string>& vFileContent) {
+void LoadDataFromVectorToFile(string FileName, vector <string> vFileContent) {
 
 	fstream MyFile;
 	MyFile.open(FileName, ios::out);
 
-	string line;
+	 
 
 	if (MyFile.is_open()) {
 
-		
+		for (string Line : vFileContent) {
 
 
-		for (string& i : vFileContent) {
-
-
-			MyFile << i  << endl;
+			if (Line != "")
+			{
+				MyFile << Line << endl;
+			}
 
 
 		}
@@ -40,7 +40,5 @@ int main() {
 	vector <string> vFileContent = {"Ahmed", "Ali","Rabii","Salem"};
 
 	LoadDataFromVectorToFile("text.txt", vFileContent);
-
-	 
 
 }
