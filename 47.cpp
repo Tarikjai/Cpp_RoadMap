@@ -7,7 +7,7 @@ int main() {
 
 	vector <int> vVector = { 1,5,6,9,7 };
 
-	cout << "Initial Vector: " ;
+	cout << "Initial Vector : " ;
 
 	for (const int& i : vVector) {
 		cout << i << " "; 
