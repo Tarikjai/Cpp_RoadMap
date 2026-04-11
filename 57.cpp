@@ -16,7 +16,7 @@ void LoadDataFromVectorToFile(string FileName, vector <string> vFileContent) {
 
 
 int main() {
-
+	vector <string> vNames;
  
 
 }
