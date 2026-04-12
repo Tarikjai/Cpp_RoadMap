@@ -85,7 +85,7 @@ int main() {
 	ChangeRecordFromFile("text.txt", "Omar","Hmida");
 
 
-	cout << "\n\nFile content after edit: " << endl;
+	cout << "\n\nFile content after Edit: " << endl;
 	PrintFileContent("text.txt");
 
 }
