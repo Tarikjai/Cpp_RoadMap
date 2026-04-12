@@ -6,33 +6,33 @@
 using namespace std;
  
 
-void LoadFileFromFileToVector(string vFileContent, vector <string>& vVectorContent) {
+void LoadFileFromFileToVector(string FileName, vector <string>& vFileContent) {
 
 	fstream MyFile;
 
-	MyFile.open(vFileContent, ios::in);
+	MyFile.open(FileName, ios::in);
 	string line;
 
 	while (getline(MyFile, line)) {
 		if (line != "Ali") {
-			vVectorContent.push_back(line);
+			vFileContent.push_back(line);
 		}
 		else {
-			vVectorContent.push_back("");
+			vFileContent.push_back("");
 		}
 	}
 }
 
-void SaveVectorToFile(string FileContent, vector <string>& vVectorContent) {
+void SaveVectorToFile(string FileName, vector <string>& vFileContent) {
 
 	fstream MyFile;
 
-	MyFile.open(FileContent, ios::out);
+	MyFile.open(FileName, ios::out);
 
 
-	for (string& line : vVectorContent) {
+	for (string& line : vFileContent) {
 		if (line != "") {
-			MyFile << line;
+			MyFile << line << endl;
 		}
 		
 	}
@@ -42,27 +42,28 @@ void SaveVectorToFile(string FileContent, vector <string>& vVectorContent) {
 }
 ;
 
-void DeleteRecordFromFile(string FileContent, string Record) {
+void DeleteRecordFromFile(string FileName, string Record) {
 	vector <string> vVectorContent;
 
-	LoadFileFromFileToVector(FileContent, vVectorContent);
+	LoadFileFromFileToVector(FileName, vVectorContent);
 
 
 	
 	for (string& line : vVectorContent) {
-		if (line != Record) {
+	
+		if (line == Record) {
 			 line = "";
 		}
-		SaveVectorToFile(FileContent, vVectorContent);
+		SaveVectorToFile(FileName, vVectorContent);
 	}
 		//
 }
 
-void PrintFileContent(string FileContent) {
+void PrintFileContent(string FileName) {
 
 	fstream MyFile;
 
-	MyFile.open(FileContent, ios::in);
+	MyFile.open(FileName, ios::in);
 
 	if (MyFile.is_open()) {
 
