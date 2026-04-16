@@ -24,16 +24,16 @@
     <ClCompile Include="09.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
-    <ClCompile Include="11.cpp">
+    <ClCompile Include="11_Validate Number.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
-    <ClCompile Include="12.cpp">
+    <ClCompile Include="12_Bitwise AND operator.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
-    <ClCompile Include="13.cpp">
+    <ClCompile Include="13_Bitwise OR operator.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
-    <ClCompile Include="14.cpp">
+    <ClCompile Include="14_Declaration Vs Definition.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
     <ClCompile Include="15.cpp">
