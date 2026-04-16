@@ -16,163 +16,166 @@
     <Filter Include="Resource Files\Level_06">
       <UniqueIdentifier>{d18371e4-5049-4003-80f7-4a78ad091258}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resource Files\Level_07">
+      <UniqueIdentifier>{228c0c13-6ed8-4ca5-9604-2d43b58615b6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Cpp_Level6.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="02_07.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="09.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="11_Validate Number.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="12_Bitwise AND operator.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="13_Bitwise OR operator.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="14_Declaration Vs Definition.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="15_Default_Parameters.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="16_Function Overloading.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="17_Call Stack_Call Hierarchy.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="18_VS Function Tips.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="19_Recursion.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="20.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="21.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="23.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="24.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="25.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="26.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="27.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="28.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="29.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="30.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="31.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="32.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="33.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="34.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="35_pointer.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="36.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="37.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="38.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="39.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="40.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="41.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="42.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="43.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="44.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="46.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="47.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="48.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="49.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="50.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="51.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="52.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="53.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="54.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="55.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="56.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="57.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="58.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="59.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
-    <ClCompile Include="60.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
     <ClCompile Include="Practice.cpp">
       <Filter>Resource Files</Filter>
+    </ClCompile>
+    <ClCompile Include="02_07.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="09.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="11_Validate Number.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="12_Bitwise AND operator.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="13_Bitwise OR operator.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="14_Declaration Vs Definition.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="15_Default_Parameters.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="16_Function Overloading.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="17_Call Stack_Call Hierarchy.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="18_VS Function Tips.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="19_Recursion.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="20.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="21.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="23.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="24.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="25.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="26.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="27.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="28.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="29.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="30.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="31.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="32.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="33.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="34.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="35_pointer.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="36.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="37.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="38.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="39.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="40.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="41.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="42.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="43.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="44.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="46.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="47.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="48.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="49.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="50.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="51.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="52.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="53.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="54.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="55.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="56.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="57.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="58.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="59.cpp">
+      <Filter>Resource Files\Level_06</Filter>
+    </ClCompile>
+    <ClCompile Include="60.cpp">
+      <Filter>Resource Files\Level_06</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
