@@ -21,12 +21,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Cpp_Level6.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Practice.cpp">
-      <Filter>Resource Files</Filter>
-    </ClCompile>
     <ClCompile Include="02_07.cpp">
       <Filter>Resource Files\Level_06</Filter>
     </ClCompile>
@@ -178,7 +172,7 @@
       <Filter>Resource Files\Level_06</Filter>
     </ClCompile>
     <ClCompile Include="01.cpp">
-      <Filter>Resource Files\Level_07</Filter>
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
