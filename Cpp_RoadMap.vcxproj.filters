@@ -174,7 +174,7 @@
     <ClCompile Include="01.cpp">
       <Filter>Resource Files\Level_07</Filter>
     </ClCompile>
-    <ClCompile Include="Source.cpp">
+    <ClCompile Include="02.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

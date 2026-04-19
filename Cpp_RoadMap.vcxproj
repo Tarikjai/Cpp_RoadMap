@@ -276,7 +276,7 @@
     <ClCompile Include="60.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="02.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyLib.h" />
