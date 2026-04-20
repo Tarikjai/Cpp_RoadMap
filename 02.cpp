@@ -9,7 +9,7 @@ void GenerateRandomNumber(int arr[3][3], int Rows, int Column) {
 
 	for (int i = 0; i < Rows; i++) {
 		for (int j = 0; j < Column; j++) {
-			arr[i][j] = MyLib::RandomNumber(1, 102);
+			arr[i][j] = MyLib::RandomNumber(1, 100);
 		}
 
 	}
@@ -27,14 +27,30 @@ void PrintRandomNumber(int arr[3][3], int Rows, int Column) {
 
 }
 
-void PrintSumRows(int arr[3][3], int Rows, int Column) {
-	  
-	for (int i = 0; i < Rows; i++) {
-		int sum = 0;
-		for (int j = 0; j < Column; j++) {
-			 sum+= arr[i][j] ;
+
+
+int RowSum(int arr[3][3], int i, int Column) {
+
+	int sum = 0;
+
+
+		for (int j = 0; j <= Column -1; j++) {
+			sum += arr[i][j];
 		}
-		cout << " Row " << i + 1 << " Sum = " << sum ;
+	
+	
+	return sum;
+}
+
+
+void PrintSumRows(int arr[3][3], int Rows, int Column) {
+
+	cout << "\nThe following are the sum for each row in the matrix:\n";
+
+	for (int i = 0; i < Rows; i++) {
+	
+	
+		cout << " Row " << i +1 << " Sum = " << RowSum( arr, i,  Column);
 		cout << endl;
 
 	}
@@ -51,7 +67,7 @@ int main() {
 	cout << "\n The following is a random matrix:\n";
 	PrintRandomNumber(arr, 3, 3);
 
-	cout << "The following are the sum for each row in the matrix:\n";
+	
 	PrintSumRows(arr, 3, 3);
 
 }
