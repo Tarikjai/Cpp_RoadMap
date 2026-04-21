@@ -37,15 +37,14 @@ int RowSum(int arr[3][3], int i, int Column) {
 		for (int j = 0; j <= Column -1; j++) {
 			sum += arr[i][j];
 		}
-	
-	
+
 	return sum;
 }
 
 
 void PrintSumRows(int arr[3][3], int Rows, int Column) {
 
-	cout << "\nThe following are the sum for each row in the matrix:\n";
+	cout << "\nThe following are the sum for each row in the matrix :\n";
 
 	for (int i = 0; i < Rows; i++) {
 	
