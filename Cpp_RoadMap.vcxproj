@@ -129,7 +129,7 @@
     <ClCompile Include="02_07.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="06.cpp" />
+    <ClCompile Include="06_3x3Matrix_ordered.cpp" />
     <ClCompile Include="09.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>

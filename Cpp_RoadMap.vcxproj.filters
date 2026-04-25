@@ -186,7 +186,7 @@
     <ClCompile Include="05.cpp">
       <Filter>Resource Files\Level_07</Filter>
     </ClCompile>
-    <ClCompile Include="06.cpp">
+    <ClCompile Include="06_3x3Matrix_ordered.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
