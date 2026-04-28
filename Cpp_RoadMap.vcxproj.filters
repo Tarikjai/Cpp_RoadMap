@@ -202,7 +202,7 @@
       <Filter>Resource Files\Level_07</Filter>
     </ClCompile>
     <ClCompile Include="11.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Resource Files\Level_07</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
