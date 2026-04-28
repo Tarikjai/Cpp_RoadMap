@@ -198,7 +198,10 @@
     <ClCompile Include="09_print_Middle_Rows&amp;Cols.cpp">
       <Filter>Resource Files\Level_07</Filter>
     </ClCompile>
-    <ClCompile Include="Source.cpp">
+    <ClCompile Include="10_Sum_Array.cpp">
+      <Filter>Resource Files\Level_07</Filter>
+    </ClCompile>
+    <ClCompile Include="11.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
