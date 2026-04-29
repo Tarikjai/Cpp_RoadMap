@@ -204,6 +204,9 @@
     <ClCompile Include="11.cpp">
       <Filter>Resource Files\Level_07</Filter>
     </ClCompile>
+    <ClCompile Include="Source.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyLib.h">
