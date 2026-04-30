@@ -13,7 +13,7 @@ void GenerateMatrix3X3(int arr[3][3], int Rows, int Cols) {
 }
 void PrintMatrix3X3(int arr[3][3], int Rows, int Cols) {
 
-	cout << "The foll owing is a 3x 3 random matrix: \n";
+	cout << "The following is a 3x 3 random matrix: \n";
 
 	for (int i = 0; i < Rows; i++) {
 		for (int j = 0; j < Cols; j++) {
