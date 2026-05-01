@@ -11,6 +11,8 @@ void FillMatrixWithRandomNumbers(int Arr[3][3], int Rows, int Cols) {
 		}
 	}
 }
+
+
 void Print3x3Matrix(int Arr[3][3], int Rows, int Cols) {
 
 	for (int i = 0; i < Rows; i++) {
@@ -23,33 +25,32 @@ void Print3x3Matrix(int Arr[3][3], int Rows, int Cols) {
 
 }
 
- 
 
 
-bool IsIdentityMatrix(int Matrix1[3][3], short Rows, short Cols) {
+
+bool CheckTypical(int Matrix1[3][3], int Matrix2[3][3], short Rows, short Cols) {
 
 
-	
-		for (short i = 0; i < Rows; i++)
+
+	for (short i = 0; i < Rows; i++)
+	{
+		for (short j = 0; j < Cols; j++)
 		{
-			for (short j = 0; j < Cols; j++)
-			{
-				
-					if (i==j && Matrix1[i][j] != 1)
-						return false;
-					if (i != j && Matrix1[i][j] != 0)
-						return false;
-			
+
+			if (Matrix1[i][j] != Matrix2[i][j])
+				return false;
 
 
-			}
+
+
 		}
+	}
 
 
-	
-	
+
+
 	return true;
- 
+
 }
 
 
@@ -58,23 +59,24 @@ bool IsIdentityMatrix(int Matrix1[3][3], short Rows, short Cols) {
 
 int main() {
 
-	int Matrix1[3][3] = {{1,0,0}, {0,1,0}, {0,0,1}};
-	// int Matrix1[3][3]= { {1,0,0}, {0,1,0}, {0,0,2} };
+	int Matrix1[3][3];
+	int Matrix2[3][3];
 
-	//FillMatrixWithRandomNumbers(Matrix1, 3, 3);
- 
+	FillMatrixWithRandomNumbers(Matrix1, 3, 3);
+	FillMatrixWithRandomNumbers(Matrix2, 3, 3);
 
 	cout << "Matrix1: " << endl;
 	Print3x3Matrix(Matrix1, 3, 3);
- 
+	cout << "Matrix2: " << endl;
+	Print3x3Matrix(Matrix2, 3, 3);
 
 
 
-	if (IsIdentityMatrix(Matrix1, 3, 3)) {
+	if (CheckTypical(Matrix1, Matrix2, 3, 3)) {
 		cout << "\nYes, Typical";
 	}
 	else {
-		cout << "\nNo: Matrix is NOT identity";
+		cout << "\nNo: not Typical";
 	}
 
 

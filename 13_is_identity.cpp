@@ -23,33 +23,33 @@ void Print3x3Matrix(int Arr[3][3], int Rows, int Cols) {
 
 }
 
- 
+
 
 
 bool IsIdentityMatrix(int Matrix1[3][3], short Rows, short Cols) {
 
 
-	
-		for (short i = 0; i < Rows; i++)
+
+	for (short i = 0; i < Rows; i++)
+	{
+		for (short j = 0; j < Cols; j++)
 		{
-			for (short j = 0; j < Cols; j++)
-			{
-				
-					if (i==j && Matrix1[i][j] != 1)
-						return false;
-					if (i != j && Matrix1[i][j] != 0)
-						return false;
-			
+
+			if (i == j && Matrix1[i][j] != 1)
+				return false;
+			if (i != j && Matrix1[i][j] != 0)
+				return false;
 
 
-			}
+
 		}
+	}
 
 
-	
-	
+
+
 	return true;
- 
+
 }
 
 
@@ -58,15 +58,15 @@ bool IsIdentityMatrix(int Matrix1[3][3], short Rows, short Cols) {
 
 int main() {
 
-	int Matrix1[3][3] = {{1,0,0}, {0,1,0}, {0,0,1}};
+	int Matrix1[3][3] = { {1,0,0}, {0,1,0}, {0,0,1} };
 	// int Matrix1[3][3]= { {1,0,0}, {0,1,0}, {0,0,2} };
 
 	//FillMatrixWithRandomNumbers(Matrix1, 3, 3);
- 
+
 
 	cout << "Matrix1: " << endl;
 	Print3x3Matrix(Matrix1, 3, 3);
- 
+
 
 
 
