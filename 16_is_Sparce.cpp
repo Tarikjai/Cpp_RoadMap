@@ -4,7 +4,7 @@
 
 using namespace std;
 
- 
+
 void Print3x3Matrix(int Arr[3][3], int Rows, int Cols) {
 
 	for (int i = 0; i < Rows; i++) {
@@ -20,19 +20,14 @@ void Print3x3Matrix(int Arr[3][3], int Rows, int Cols) {
 
 
 int CountNumberInMatrix(int Matrix1[3][3], int Rows, int Cols, int CountNumber) {
-
 	int counter = 0;
-
 	for (int i = 0; i < Rows; i++) {
 		for (int j = 0; j < Rows; j++) {
-
 			if (Matrix1[i][j] == CountNumber) {
 				counter++;
 			}
-
 		}
 	}
-
 	return counter;
 }
 
@@ -57,14 +52,14 @@ bool IsSparseMatrix(int Matrix1[3][3], int Rows, int Cols) {
 int main() {
 
 	int Matrix1[3][3] = { {1,0,0}, {0,1,0}, {1,0,1} };
- 
+
 
 	cout << "Matrix1: " << endl;
 	Print3x3Matrix(Matrix1, 3, 3);
-	 
+
 
 	if (IsSparseMatrix(Matrix1, 3, 3)) {
-		cout << "\nYes, It is sparce";   
+		cout << "\nYes, It is sparce";
 	}
 	else {
 		cout << "\nNo, It's NOT sparce";

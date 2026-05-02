@@ -216,6 +216,9 @@
     <ClCompile Include="15_count_Number,in_Matrix.cpp">
       <Filter>Resource Files\Level_07</Filter>
     </ClCompile>
+    <ClCompile Include="16_is_Sparce.cpp">
+      <Filter>Resource Files\Level_07</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyLib.h">
