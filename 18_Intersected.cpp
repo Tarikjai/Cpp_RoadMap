@@ -23,7 +23,7 @@ int CheckNumberPresence(int Matrix1[3][3], int Rows, int Cols) {
 	int NumberToCheck = MyLib::AskNumber("\nPlease Enter the number to look for in matrix: ");
 
 	for (int i = 0; i < Rows; i++) {
-		for (int j = 0; j < Rows; j++) {
+		for (int j = 0; j < Cols; j++) {
 
 			if (Matrix1[i][j] == NumberToCheck) {
 				return true;

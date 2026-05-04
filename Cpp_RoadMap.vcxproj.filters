@@ -171,19 +171,19 @@
     <ClCompile Include="60.cpp">
       <Filter>Resource Files\Level_06</Filter>
     </ClCompile>
-    <ClCompile Include="01.cpp">
+    <ClCompile Include="01_RandomMatrix.cpp">
       <Filter>Resource Files\Level_07</Filter>
     </ClCompile>
-    <ClCompile Include="02.cpp">
+    <ClCompile Include="02_SumEachRow.cpp">
       <Filter>Resource Files\Level_07</Filter>
     </ClCompile>
-    <ClCompile Include="03.cpp">
+    <ClCompile Include="03_SumEachRows_InArrray.cpp">
       <Filter>Resource Files\Level_07</Filter>
     </ClCompile>
-    <ClCompile Include="04.cpp">
+    <ClCompile Include="04_SumEachCol.cpp">
       <Filter>Resource Files\Level_07</Filter>
     </ClCompile>
-    <ClCompile Include="05.cpp">
+    <ClCompile Include="05_SumEachCol_InArrray.cpp">
       <Filter>Resource Files\Level_07</Filter>
     </ClCompile>
     <ClCompile Include="06_3x3Matrix_ordered.cpp">
@@ -201,11 +201,8 @@
     <ClCompile Include="10_Sum_Array.cpp">
       <Filter>Resource Files\Level_07</Filter>
     </ClCompile>
-    <ClCompile Include="11.cpp">
+    <ClCompile Include="11_Check_Matrice_Equality.cpp">
       <Filter>Resource Files\Level_07</Filter>
-    </ClCompile>
-    <ClCompile Include="Source.cpp">
-      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="12_Is_Typical.cpp">
       <Filter>Resource Files\Level_07</Filter>
@@ -225,8 +222,23 @@
     <ClCompile Include="18_Intersected.cpp">
       <Filter>Resource Files\Level_07</Filter>
     </ClCompile>
-    <ClCompile Include="19_.cpp">
+    <ClCompile Include="19_Maximum_Minimum.cpp">
       <Filter>Resource Files\Level_07</Filter>
+    </ClCompile>
+    <ClCompile Include="20_Palinodrime.cpp">
+      <Filter>Resource Files\Level_07</Filter>
+    </ClCompile>
+    <ClCompile Include="14_scalar_Matrix.cpp">
+      <Filter>Resource Files\Level_07</Filter>
+    </ClCompile>
+    <ClCompile Include="21_Fibonacci.cpp">
+      <Filter>Resource Files\Level_07</Filter>
+    </ClCompile>
+    <ClCompile Include="22_Fibonacci_recursion.cpp">
+      <Filter>Resource Files\Level_07</Filter>
+    </ClCompile>
+    <ClCompile Include="23_Print_First_String.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

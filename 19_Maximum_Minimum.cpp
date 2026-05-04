@@ -23,9 +23,9 @@ int CheckMinimumNumber(int Matrix1[3][3], int Rows, int Cols) {
 	int Minimum = Matrix1[0][0];
 
 	for (int i = 0; i < Rows; i++) {
-		for (int j = 0; j < Rows; j++) {
+		for (int j = 0; j < Cols; j++) {
 
-			if (Matrix1[i][j] < Minimum ) {
+			if (Matrix1[i][j] < Minimum) {
 				Minimum = Matrix1[i][j];
 			}
 
@@ -40,7 +40,7 @@ int CheckMaximumNumber(int Matrix1[3][3], int Rows, int Cols) {
 	int Maximum = Matrix1[0][0];
 
 	for (int i = 0; i < Rows; i++) {
-		for (int j = 0; j < Rows; j++) {
+		for (int j = 0; j < Cols; j++) {
 
 			if (Matrix1[i][j] > Maximum) {
 				Maximum = Matrix1[i][j];
@@ -51,7 +51,7 @@ int CheckMaximumNumber(int Matrix1[3][3], int Rows, int Cols) {
 	return Maximum;
 }
 
- 
+
 
 int main() {
 
@@ -60,8 +60,6 @@ int main() {
 
 	cout << "Matrix1: " << endl;
 	Print3x3Matrix(Matrix1, 3, 3);
-
- 
 
 
 	cout << "\nMinimum Number is: " << CheckMinimumNumber(Matrix1, 3, 3) << endl;
