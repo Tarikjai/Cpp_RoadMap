@@ -15,6 +15,15 @@ void Generate3x3RandomMatrix(int Matrix[3][3], int Rows, int Cols) {
 	
 	}
 
+}
+void Print3x3RandomMatrix(int Matrix[3][3], int Rows, int Cols) {
+
+	for (int i = 0; i < Rows; i++) {
+		for (int j = 0; j < Rows; j++) {
+			cout << setw(3) << Matrix[i][j] << "  ";
+		}
+		cout << endl;
+	}
 
 int main() {
 	int Matrix[3][3];
