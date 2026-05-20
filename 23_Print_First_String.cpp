@@ -43,7 +43,6 @@ void PrintRowSum(int Matrix[3][3], int Rows, int Cols) {
 int main() {
 	int Matrix[3][3];
 	Generate3x3RandomMatrix(Matrix, 3, 3);
-
 	cout << "The following is a  3X3 random matrix: " << endl;
 	Print3x3RandomMatrix(Matrix, 3, 3);
 
