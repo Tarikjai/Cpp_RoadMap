@@ -5,21 +5,21 @@
 using namespace std;
 
 
-void Generate3x3orderedMatrix(int Matrix[3][3], int Rows, int Cols) {
+void Generate3x3orderedMatrix(int Matrix1[3][3], int Rows, int Cols) {
 	int counter = 0;
 
 	for (int i = 0; i < Rows; i++) {
 		for (int j = 0; j < Rows; j++) {
 			counter++;
-			Matrix[i][j] = counter;
+			Matrix1[i][j] = counter;
 		}
 	}
 }
 
-void Print3x3orderedMatrix(int Matrix[3][3], int Rows, int Cols) {
+void Print3x3orderedMatrix(int Matrix1[3][3], int Rows, int Cols) {
 	for (int i = 0; i < Rows; i++) {
 		for (int j = 0; j < Rows; j++) {
-			cout << setw(3) << Matrix[i][j] << "  ";
+			cout << setw(3) << Matrix1[i][j] << "  ";
 		}
 		cout << endl;
 	}
@@ -28,12 +28,13 @@ void Print3x3orderedMatrix(int Matrix[3][3], int Rows, int Cols) {
 
 void GenerateTransposedMatrix(int Matrix1[3][3], int Matrix2[3][3], int Rows, int Cols) {
 	for (int i = 0; i < Rows; i++) {
-		for (int j = 0; j < Rows; j++) {
+		for (int j = 0; j < Cols; j++) {
 			Matrix2[j][i] = Matrix1[i][j];
 		}
 	}
 }
 void PrintTransposedMatrix(int Matrix2[3][3], int Rows, int Cols) {
+
 	for (int i = 0; i < Rows; i++) {
 		for (int j = 0; j < Rows; j++) {
 			cout << setw(3) << Matrix2[i][j] << "  ";
@@ -53,6 +54,8 @@ int main() {
 	GenerateTransposedMatrix(Matrix1, Matrix1, 3, 3);
 	PrintTransposedMatrix(Matrix2, 3, 3);
 }
+
+
 
 /* 6
 void Generate3x3orderedMatrix(int Matrix[3][3], int Rows, int Cols) {
