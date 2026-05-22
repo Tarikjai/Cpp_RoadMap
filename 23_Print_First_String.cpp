@@ -3,7 +3,7 @@
 #include "MyLib.h"
 
 using namespace std;
-
+/* 7
 void Generate3x3orderedMatrix(int Matrix1[3][3], int Rows, int Cols) {
 	int counter = 0;
 
@@ -15,33 +15,25 @@ void Generate3x3orderedMatrix(int Matrix1[3][3], int Rows, int Cols) {
 	}
 }
 
-void Print3x3orderedMatrix(int Matrix1[3][3], int Rows, int Cols) {
-	for (int i = 0; i < Rows; i++) {
-		for (int j = 0; j < Rows; j++) {
-			cout << setw(3) << Matrix1[i][j] << "  ";
-		}
-		cout << endl;
-	}
-}
+
 
 
 void GenerateTransposedMatrix(int Matrix1[3][3], int Matrix2[3][3], int Rows, int Cols) {
 	for (int i = 0; i < Rows; i++) {
 		for (int j = 0; j < Cols; j++) {
-			Matrix2[j][i] = Matrix1[i][j];
+			Matrix2[i][j] = Matrix1[j][i];
 		}
 	}
 }
-void PrintTransposedMatrix(int Matrix2[3][3], int Rows, int Cols) {
-
+ 
+void PrintMatrix(int Matrix[3][3], int Rows, int Cols) {
 	for (int i = 0; i < Rows; i++) {
 		for (int j = 0; j < Rows; j++) {
-			cout << setw(3) << Matrix2[i][j] << "  ";
+			cout << setw(3) << Matrix[i][j] << "  ";
 		}
 		cout << endl;
 	}
 }
-
 
 int main() {
 	int Matrix1[3][3];
@@ -49,12 +41,13 @@ int main() {
 
 	Generate3x3orderedMatrix(Matrix1, 3, 3);
 	cout << "The following is a  3X3 ordered matrix: " << endl;
-	Print3x3orderedMatrix(Matrix1, 3, 3);
-	GenerateTransposedMatrix(Matrix1, Matrix1, 3, 3);
-	PrintTransposedMatrix(Matrix2, 3, 3);
+	PrintMatrix(Matrix1, 3, 3);
+	GenerateTransposedMatrix(Matrix1, Matrix2, 3, 3);
+	cout << "\nThe following is a  3X3 transposed matrix: " << endl;
+	PrintMatrix(Matrix2, 3, 3);
 }
 
-
+*/
 
 /* 6
 void Generate3x3orderedMatrix(int Matrix[3][3], int Rows, int Cols) {
