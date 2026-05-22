@@ -4,7 +4,6 @@
 
 using namespace std;
 
-
 void Generate3x3orderedMatrix(int Matrix1[3][3], int Rows, int Cols) {
 	int counter = 0;
 
