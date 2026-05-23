@@ -17,7 +17,6 @@ void Generate3x3orderedMatrix(int Matrix1[3][3], int Rows, int Cols) {
 
 
 
-
 void GenerateTransposedMatrix(int Matrix1[3][3], int Matrix2[3][3], int Rows, int Cols) {
 	for (int i = 0; i < Rows; i++) {
 		for (int j = 0; j < Cols; j++) {
