@@ -3,6 +3,60 @@
 #include "MyLib.h"
 
 using namespace std;
+
+
+void Generate3x3orderedMatrix(int Matrix[3][3], int Rows, int Cols) {
+
+	for (int i = 0; i < Rows; i++) {
+		for (int j = 0; j < Rows; j++) {
+	
+			Matrix[i][j] = MyLib::RandomNumber(1,10);
+		}
+	}
+}
+
+
+
+
+void PrintMatrix(int Matrix[3][3], int Rows, int Cols) {
+	for (int i = 0; i < Rows; i++) {
+		for (int j = 0; j < Rows; j++) {
+			cout << setw(3) << Matrix[i][j] << "  ";
+		}
+		cout << endl;
+	}
+}
+
+void FillMultypliedMatrix(int Matrix1[3][3], int Matrix2[3][3], int Matrix3[3][3], int Rows, int Cols) {
+	for (int i = 0; i < Rows; i++) {
+		for (int j = 0; j < Cols; j++) {
+			 Matrix3[i][j] = (Matrix1[i][j]* Matrix2[i][j]);
+		}
+		cout << endl;
+	}
+}
+
+
+int main() {
+	int Matrix1[3][3];
+	int Matrix2[3][3];
+	int Matrix3[3][3];
+
+	Generate3x3orderedMatrix(Matrix1, 3, 3);
+	Generate3x3orderedMatrix(Matrix2, 3, 3);
+	cout << "Matrix1: " << endl;
+	PrintMatrix(Matrix1, 3, 3);
+	cout << "Matrix2: " << endl;
+	PrintMatrix(Matrix1, 3, 3);
+
+	FillMultypliedMatrix(Matrix1, Matrix2, Matrix3, 3, 3);
+
+	cout << "\nResult: " << endl;
+	PrintMatrix(Matrix3, 3, 3);
+}
+
+
+
 /* 7
 void Generate3x3orderedMatrix(int Matrix1[3][3], int Rows, int Cols) {
 	int counter = 0;
