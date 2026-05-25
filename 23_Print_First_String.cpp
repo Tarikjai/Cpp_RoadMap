@@ -4,6 +4,115 @@
 
 using namespace std;
 
+void Generate3x3orderedMatrix(int Matrix[3][3], int Rows, int Cols) {
+	for (int i = 0; i < Rows; i++) {
+		for (int j = 0; j < Rows; j++) {
+			Matrix[i][j] = MyLib::RandomNumber(1, 5);
+		}
+	}
+}
+
+void PrintMatrix(int Matrix[3][3], int Rows, int Cols) {
+	for (int i = 0; i < Rows; i++) {
+		for (int j = 0; j < Rows; j++) {
+			printf(" %0*d   ", 2, Matrix[i][j]);
+		}
+		cout << endl;
+	}
+}
+
+int Sum(int Matrix1[3][3], int Rows, int Cols) {
+	int Sum = 0;
+	for (int i = 0; i < Rows; i++) {
+		for (int j = 0; j < Cols; j++) {
+			Sum += Matrix1[i][j];
+		} 
+	}
+	return  Sum;
+}
+
+
+
+
+
+int main() {
+	int Matrix1[3][3];
+
+	Generate3x3orderedMatrix(Matrix1, 3, 3);
+
+	cout << "Matrix1: " << endl;
+	PrintMatrix(Matrix1, 3, 3);
+
+	cout << "\Sum of Matrix1 is : " << Sum(Matrix1, 3, 3);
+	
+}
+
+
+
+/* 9
+void Generate3x3orderedMatrix(int Matrix[3][3], int Rows, int Cols) {
+	for (int i = 0; i < Rows; i++) {
+		for (int j = 0; j < Rows; j++) {
+			Matrix[i][j] = MyLib::RandomNumber(1, 5);
+		}
+	}
+}
+
+
+
+
+void PrintMatrix(int Matrix[3][3], int Rows, int Cols) {
+	for (int i = 0; i < Rows; i++) {
+		for (int j = 0; j < Rows; j++) {
+			printf(" %0*d   ", 2, Matrix[i][j]);
+		}
+		cout << endl;
+	}
+}
+ 
+void MiddleRow(int Matrix1[3][3], int Rows, int Cols) {
+	
+	int middleRow = Rows / 2;
+	for (int i = 0; i < Rows; i++) {
+		 
+			printf(" %0*d   ", 2, Matrix1[middleRow][i]);
+		 
+		 
+	}
+	cout << endl;
+}
+ 
+
+void MiddlCols(int Matrix1[3][3], int Rows, int Cols) {
+	
+	int middleCols = Cols / 2;
+		for (int j = 0; j < Rows; j++) {
+			printf(" %0*d   ", 2, Matrix1[j][middleCols]);
+		}
+		cout << endl;
+	 
+}
+
+int main() {
+	int Matrix1[3][3];
+
+
+	Generate3x3orderedMatrix(Matrix1, 3, 3);
+	
+	cout << "Matrix1: " << endl;
+	PrintMatrix(Matrix1, 3, 3);
+
+
+	cout << "Middle Row: " << endl;
+	MiddleRow(Matrix1, 3, 3);
+
+ 
+
+	cout << "\Middle Cols: " << endl;
+	MiddlCols(Matrix1, 3, 3);
+}
+
+/* 8
 
 void Generate3x3orderedMatrix(int Matrix[3][3], int Rows, int Cols) {
 
