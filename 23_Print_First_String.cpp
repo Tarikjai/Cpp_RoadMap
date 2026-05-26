@@ -43,7 +43,7 @@ int main() {
 	cout << "Matrix1: " << endl;
 	PrintMatrix(Matrix1, 3, 3);
 
-	cout << "\Sum of Matrix1 is : " << Sum(Matrix1, 3, 3);
+	cout << "\Sum of Matrix  is : " << Sum(Matrix1, 3, 3);
 	
 }
 
