@@ -40,7 +40,7 @@ int main() {
 
 	Generate3x3orderedMatrix(Matrix1, 3, 3);
 
-	cout << "Matrix1: " << endl;
+	cout << "Matrix1 : " << endl;
 	PrintMatrix(Matrix1, 3, 3);
 
 	cout << "\Sum of Matrix  is : " << Sum(Matrix1, 3, 3);
