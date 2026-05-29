@@ -34,7 +34,7 @@ int SumOfMatrix(int arr[3][3], int Rows, int Cols) {
 }
 
 bool CheckEquality(int arr1[3][3], int arr2[3][3], int Rows, int Cols) {
-	return SumOfMatrix(arr1, 3, 3) == SumOfMatrix(arr2, 3, 3);
+	return SumOfMatrix(arr1 , 3, 3) == SumOfMatrix(arr2, 3, 3);
 }
 
 
