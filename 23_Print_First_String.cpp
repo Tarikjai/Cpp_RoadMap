@@ -44,7 +44,7 @@ int main() {
 	int arr1[3][3];
 	int arr2[3][3];
 
-	FillMatrixWithRandomNumbers(arr1, 3, 3);
+	FillMatrixWithRandomNumbers(arr1,  3, 3);
 	FillMatrixWithRandomNumbers(arr2, 3, 3);
 
 
