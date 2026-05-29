@@ -4,6 +4,67 @@
 
 using namespace std;
 
+void FillMatrixWithRandomNumbers(int arr[3][3], int Rows, int Cols) {
+
+	for (int i = 0; i < Rows; i++) {
+		for (int j = 0; j < Cols; j++) {
+			arr[i][j] = MyLib::RandomNumber(1, 10);
+		}
+	}
+}
+
+void PrintMatrix(int arr[3][3], int Rows, int Cols) {
+
+	for (int i = 0; i < Rows; i++) {
+		for (int j = 0; j < Cols; j++) {
+			printf(" %0*d ", 2, arr[i][j]);
+		}
+		cout << endl;
+	}
+}
+
+int SumOfMatrix(int arr[3][3], int Rows, int Cols) {
+	int SumArray = 0;
+	for (int i = 0; i < Rows; i++) {
+		for (int j = 0; j < Cols; j++) {
+			SumArray += arr[i][j];
+		}
+	}
+	return SumArray;
+}
+
+bool CheckEquality(int arr1[3][3], int arr2[3][3], int Rows, int Cols) {
+	return SumOfMatrix(arr1, 3, 3) == SumOfMatrix(arr2, 3, 3);
+}
+
+
+
+int main() {
+
+	int arr1[3][3];
+	int arr2[3][3];
+
+	FillMatrixWithRandomNumbers(arr1, 3, 3);
+	FillMatrixWithRandomNumbers(arr2, 3, 3);
+
+
+	cout << "Matrix1:" << endl;
+	PrintMatrix(arr1, 3, 3);
+
+	cout << "\nMatrix2:" << endl;
+	PrintMatrix(arr2, 3, 3);
+
+	if (CheckEquality(arr1, arr2, 3, 3)) {
+		cout << "Equal";
+	}
+	else {
+		cout << "Not Equal";
+	}
+
+
+}
+
+
 /*11
 
 int RandomNumber(int  From, int To) {
