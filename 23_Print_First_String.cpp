@@ -4,6 +4,8 @@
 
 using namespace std;
 
+
+/* 12
 void FillMatrixWithRandomNumbers(int arr[3][3], int Rows, int Cols) {
 
 	for (int i = 0; i < Rows; i++) {
@@ -23,19 +25,20 @@ void PrintMatrix(int arr[3][3], int Rows, int Cols) {
 	}
 }
 
-int SumOfMatrix(int arr[3][3], int Rows, int Cols) {
-	int SumArray = 0;
+bool CheclTypical(int arr1[3][3] , int arr2[3][3], int Rows, int Cols) {
+	 
 	for (int i = 0; i < Rows; i++) {
 		for (int j = 0; j < Cols; j++) {
-			SumArray += arr[i][j];
+			if(arr1[i][j] != arr2[i][j]) {
+				return false;
+			}
+			
 		}
 	}
-	return SumArray;
+	return true;
 }
 
-bool CheckEquality(int arr1[3][3], int arr2[3][3], int Rows, int Cols) {
-	return SumOfMatrix(arr1 , 3, 3) == SumOfMatrix(arr2, 3, 3);
-}
+ 
 
 
 
@@ -54,14 +57,14 @@ int main() {
 	cout << "\nMatrix2:" << endl;
 	PrintMatrix(arr2, 3, 3);
 
-	if (CheckEquality(arr1, arr2, 3, 3)) {
-		cout << "Equal";
+	if (CheclTypical(arr1, arr1, 3, 3)) {
+		cout << "Typical";
 	}
 	else {
-		cout << "Not Equal";
+		cout << "Not Typical";
 	}
 
-
+	system("pause>0");
 }
 
 
