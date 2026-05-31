@@ -4,8 +4,95 @@
 
 using namespace std;
 
+void PrintMatrix(int arr[3][3], int Rows, int Cols) {
+
+	for (int i = 0; i < Rows; i++) {
+		for (int j = 0; j < Cols; j++) {
+			printf(" %0*d ", 2, arr[i][j]);
+		}
+		cout << endl;
+	}
+}
+
+int CountNumber(int arr1[3][3], int Rows, int Cols, int Number) {
+
+	int count = 0;
+
+	for (int i = 0; i < Rows; i++) {
+		for (int j = 0; j < Rows; j++) {
+			if (Number == arr1[i][j]) {
+				count++;
+			 }
+		}
+	}
+	return count;
+}
 
 
+int main() {
+
+	int arr1[3][3] = { {1,0,0},{0,1,0},{0,0,1} };
+
+	cout << "Matrix1:" << endl;
+	PrintMatrix(arr1, 3, 3);
+
+
+
+	int Number = MyLib::AskNumber("Enter the number to count in matrix? ");
+
+
+	cout << "\nNumber " << Number << " count in matrix is " << CountNumber( arr1,3,3, Number);
+
+	system("pause>0");
+}
+/*14
+void PrintMatrix(int arr[3][3], int Rows, int Cols) {
+
+	for (int i = 0; i < Rows; i++) {
+		for (int j = 0; j < Cols; j++) {
+			printf(" %0*d ", 2, arr[i][j]);
+		}
+		cout << endl;
+	}
+}
+
+bool CheckIdentity(int arr1[3][3], int Rows, int Cols) {
+
+	int scalar = arr1[0][0];
+
+	for (int i = 0; i < Rows; i++) {
+		for (int j = 0; j < Rows; j++) {
+			if (i == j && arr1[i][j] != scalar) {
+				return false;
+			}
+			if (i != j && arr1[i][j] != 0) {
+				return false;
+			}
+		}
+	}
+	return true;
+}
+
+
+int main() {
+
+	int arr1[3][3] = { {1,0,0},{0,1,0},{0,0,1} };
+
+	cout << "Matrix1:" << endl;
+	PrintMatrix(arr1, 3, 3);
+
+
+	if (CheckIdentity(arr1, 3, 3)) {
+		cout << "Yes, Matrix is scalar";
+	}
+	else {
+		cout << "No, Not scalar";
+	}
+
+	system("pause>0");
+}
+
+/*13
 void PrintMatrix(int arr[3][3], int Rows, int Cols) {
 
 	for (int i = 0; i < Rows; i++) {
