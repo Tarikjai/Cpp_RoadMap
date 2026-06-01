@@ -4,6 +4,55 @@
 
 using namespace std;
 
+void PrintMatrix(int arr[3][3], int Rows, int Cols) {
+
+	for (int i = 0; i < Rows; i++) {
+		for (int j = 0; j < Cols; j++) {
+			printf(" %0*d ", 2, arr[i][j]);
+		}
+		cout << endl;
+	}
+}
+
+bool CheckNumber(int arr1[3][3], int Rows, int Cols, int Number) {
+
+	 
+
+	for (int i = 0; i < Rows; i++) {
+		for (int j = 0; j < Rows; j++) {
+			if (Number == arr1[i][j]) {
+				return true;
+			}
+		}
+	}
+	return false;
+}
+
+
+int main() {
+
+	int arr1[3][3] = { {77,5,12},{22,20,1},{1,7,4} };
+
+	cout << "Matrix1:" << endl;
+	PrintMatrix(arr1, 3, 3);
+
+
+
+	int Number = MyLib::AskNumber("Please enter the number to look for in matrix? ");
+
+
+
+	if (CheckNumber(arr1, 3, 3, Number)) {
+		cout << "Yes, it is there";
+	}
+	else {
+		cout << "No, not present";
+	}
+
+	system("pause>0");
+}
+
+
 /*16 
 void PrintMatrix(int arr[3][3], int Rows, int Cols) {
 
