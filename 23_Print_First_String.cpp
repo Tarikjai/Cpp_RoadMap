@@ -4,6 +4,63 @@
 
 using namespace std;
  
+
+void PrintMatrix(int arr[3][3], int Rows, int Cols) {
+	for (int i = 0; i < Rows; i++) {
+		for (int j = 0; j < Cols; j++) {
+			printf(" %0*d ", 2, arr[i][j]);
+		}
+		cout << endl;
+	}
+}
+
+int CheckMaximum(int arr1[3][3], int Rows, int Cols) {
+	int maximum = 0;
+	for (int i = 0; i < Rows; i++) {
+		for (int j = 0; j < Cols; j++) {
+			if (arr1[i][j] > maximum) {
+				maximum = arr1[i][j];
+			}
+		}
+	}
+	return maximum;
+}
+
+int CheckMinimum(int arr1[3][3], int Rows, int Cols) {
+	int minimum = arr1[0][0];
+
+	for (int i = 0; i < Rows; i++) {
+		for (int j = 0; j < Cols; j++) {
+			if ( arr1[i][j] < minimum ) {
+				minimum = arr1[i][j];
+			}
+		}
+	}
+	return minimum;
+}
+
+
+
+
+int main() {
+
+	int arr1[3][3] = { {77,5,12},{22,20,1},{1,5,9} };
+
+
+
+
+	cout << "Matrix1:" << endl;
+	PrintMatrix(arr1, 3, 3);
+
+
+	cout << "\nMinimum Number is: " << CheckMinimum( arr1, 3, 3)  << endl;
+	cout << "\nMaximum Number is: " << CheckMaximum(arr1, 3, 3) << endl;
+
+	system("pause>0");
+}
+
+
+/*18
 void PrintMatrix(int arr[3][3], int Rows, int Cols) {
 
 	for (int i = 0; i < Rows; i++) {
