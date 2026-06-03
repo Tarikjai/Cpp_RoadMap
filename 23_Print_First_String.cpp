@@ -3,6 +3,68 @@
 #include "MyLib.h"
 
 using namespace std;
+ 
+
+void PrintMatrix(int arr[3][3], int Rows, int Cols) {
+
+	for (int i = 0; i < Rows; i++) {
+		for (int j = 0; j < Cols; j++) {
+			printf(" %0*d ", 2, arr[i][j]);
+		}
+		cout << endl;
+	}
+}
+
+
+int CheckIntersected(int arr2[3][3], int Rows, int Cols, int Number) {
+
+	for (int i = 0; i < Rows; i++) {
+		for (int j = 0; j < Cols; j++) {
+			if (Number == arr2[i][j]) {
+				return arr2[i][j] ;
+			}
+		}
+	}
+
+}
+
+
+void PrintIntersected(int arr1[3][3], int arr2[3][3], int Rows, int Cols) {
+
+	for (int i = 0; i < Rows; i++) {
+		for (int j = 0; j < Cols; j++) {
+			if (arr1[i][j] == CheckIntersected(arr2,  3, 3, arr1[i][j])) {
+				cout << arr1[i][j] << setw(3);
+			}
+		}
+	}
+	 
+}
+
+
+
+
+
+int main() {
+
+	int arr1[3][3] = { {77,5,12},{22,20,1},{1,0,9} };
+	int	arr2[3][3] = { {5,80,90},{22,77,1},{10,8,33} };
+
+	 
+
+
+	cout << "Matrix1:" << endl;
+	PrintMatrix(arr1, 3, 3);
+
+	cout << "\nMatrix2:" << endl;
+	PrintMatrix(arr2, 3, 3);
+
+	cout << "\nIntersected numbers are: " << endl;
+	PrintIntersected(arr1, arr2, 3, 3);
+	system("pause>0");
+}
+
+/*17
 
 void PrintMatrix(int arr[3][3], int Rows, int Cols) {
 
