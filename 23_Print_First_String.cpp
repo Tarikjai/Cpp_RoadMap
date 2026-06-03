@@ -4,7 +4,6 @@
 
 using namespace std;
  
-
 void PrintMatrix(int arr[3][3], int Rows, int Cols) {
 
 	for (int i = 0; i < Rows; i++) {
@@ -15,7 +14,6 @@ void PrintMatrix(int arr[3][3], int Rows, int Cols) {
 	}
 }
 
-
 int CheckIntersected(int arr2[3][3], int Rows, int Cols, int Number) {
 
 	for (int i = 0; i < Rows; i++) {
@@ -25,9 +23,7 @@ int CheckIntersected(int arr2[3][3], int Rows, int Cols, int Number) {
 			}
 		}
 	}
-
 }
-
 
 void PrintIntersected(int arr1[3][3], int arr2[3][3], int Rows, int Cols) {
 
@@ -38,7 +34,6 @@ void PrintIntersected(int arr1[3][3], int arr2[3][3], int Rows, int Cols) {
 			}
 		}
 	}
-	 
 }
 
 
