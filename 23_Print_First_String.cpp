@@ -53,8 +53,8 @@ int main() {
 	PrintMatrix(arr1, 3, 3);
 
 
-	cout << "\nMinimum Number is: " << CheckMinimum( arr1, 3, 3)  << endl;
-	cout << "\nMaximum Number is: " << CheckMaximum(arr1, 3, 3) << endl;
+	cout << "\nMinimum Number is : " << CheckMinimum( arr1, 3, 3)  << endl;
+	cout << "\nMaximum Number is : " << CheckMaximum(arr1, 3, 3) << endl;
 
 	system("pause>0");
 }
