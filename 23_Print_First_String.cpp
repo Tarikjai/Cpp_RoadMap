@@ -13,7 +13,7 @@ void PrintMatrix(int arr[3][3], int Rows, int Cols) {
 	}
 }
 
-bool CheckMaximum(int arr1[3][3], int Rows, int Cols) {
+bool CheckNumber(int arr1[3][3], int Rows, int Cols) {
 	int maximum = 0;
 	for (int i = 0; i < Rows; i++) {
 		for (int j = 0; j < Cols; j++) {
@@ -28,15 +28,21 @@ bool CheckMaximum(int arr1[3][3], int Rows, int Cols) {
 
 int main() {
 
-	int arr1[3][3] = { {77,5,12},{22,20,1},{1,5,9} };
-
+	int Matrix1[3][3] = { {1,2,1},{5,5,5},{7,3,7} };
+	int Matrix2[3][3] = { {1,2,1},{5,5,5},{7,3,8} };
 
 	cout << "Matrix1:" << endl;
-	PrintMatrix(arr1, 3, 3);
+	PrintMatrix(Matrix1, 3, 3);
 
 
 
-	cout << "\nMaximum Number is : " << CheckMaximum(arr1, 3, 3) << endl;
+	if (CheckNumber(Matrix1, 3, 3)) {
+		cout << "Yes, it is there";
+	}
+	else {
+		cout << "No, not present";
+	}
+
 
 	system("pause>0");
 }
