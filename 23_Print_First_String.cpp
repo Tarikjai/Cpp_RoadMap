@@ -37,10 +37,10 @@ int main() {
 
 
 	if (CheckNumber(Matrix1, 3, 3)) {
-		cout << "Yes, it is there";
+		cout << "Yes, it is  palindrome";
 	}
 	else {
-		cout << "No, not present";
+		cout << "No, not palindrome";
 	}
 
 
