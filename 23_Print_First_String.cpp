@@ -35,7 +35,6 @@ int main() {
 	PrintMatrix(Matrix1, 3, 3);
 
 
-
 	if (CheckNumber(Matrix1, 3, 3)) {
 		cout << "Yes, it is  palindrome";
 	}
