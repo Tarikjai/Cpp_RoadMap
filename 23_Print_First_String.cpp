@@ -28,8 +28,8 @@ bool CheckNumber(int arr1[3][3], int Rows, int Cols) {
 
 int main() {
 
-	int Matrix1[3][3] = { {1,2,1},{5,5,5},{7,3,7} };
-	int Matrix2[3][3] = { {1,2,1},{5,5,5},{7,3,8} };
+	int Matrix1[3][3] = { {1,2,1},{5,5,5},{7,3,7}};
+	int Matrix2[3][3] = { {1,2,1},{5,5,5},{7,3,8}};
 
 	cout << "Matrix1:" << endl;
 	PrintMatrix(Matrix1, 3, 3);
