@@ -3,7 +3,7 @@
 #include "MyLib.h"
 
 using namespace std;
-/*20
+/* 20
 using namespace std;
 
 void PrintMatrix(int arr[3][3], int Rows, int Cols) {
