@@ -3,7 +3,9 @@
 #include "MyLib.h"
 
 using namespace std;
- 
+/*20
+using namespace std;
+
 void PrintMatrix(int arr[3][3], int Rows, int Cols) {
 	for (int i = 0; i < Rows; i++) {
 		for (int j = 0; j < Cols; j++) {
@@ -13,30 +15,31 @@ void PrintMatrix(int arr[3][3], int Rows, int Cols) {
 	}
 }
 
-bool CheckNumber(int arr1[3][3], int Rows, int Cols) {
-	int maximum = 0;
+bool CheckPalindrome(int arr1[3][3], int Rows, int Cols) {
+
+
 	for (int i = 0; i < Rows; i++) {
-		for (int j = 0; j < Cols; j++) {
-			if (arr1[i][j] > maximum) {
-				maximum = arr1[i][j];
+		for (int j = 0; j < Cols / 2; j++) {
+			if (arr1[i][j] != arr1[i][Cols - 1 - j]) {
+				return false;
 			}
 		}
 	}
-	return maximum;
+	return true;
 }
 
 
 int main() {
 
-	int Matrix1[3][3] = { {1,2,1},{5,5,5},{7,3,7}};
-	int Matrix2[3][3] = { {1,2,1},{5,5,5},{7,3,8}};
+	int Matrix1[3][3] = { {1,2,1},{4,5,4},{7,3,9} };
+
 
 	cout << "Matrix1:" << endl;
 	PrintMatrix(Matrix1, 3, 3);
 
 
-	if (CheckNumber(Matrix1, 3, 3)) {
-		cout << "Yes, it is  paliindrome";
+	if (CheckPalindrome(Matrix1, 3, 3)) {
+		cout << "Yes, it is  palindrome";
 	}
 	else {
 		cout << "No, not palindrome";
