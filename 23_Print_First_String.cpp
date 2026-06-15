@@ -31,7 +31,7 @@ bool CheckPalindrome(int  arr1[3][3], int Rows,  int  Cols) {
 
 int main() {
 
-	int Matrix1[3][3] = { {1,2,1},{4,5,4},{7,3,9} };
+	int Matrix1[3][3] =  { {1,2,1},{4,5,4},{7,3,9} };
 
 
 	cout << "Matrix1:" << endl;
