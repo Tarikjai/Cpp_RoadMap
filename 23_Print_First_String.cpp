@@ -3,6 +3,29 @@
 #include "MyLib.h"
 
 using namespace std;
+
+
+
+void Print() {
+
+	for (int i = 0; i < 10; i++) {
+		
+	}
+}
+
+int main() {
+
+	
+
+	
+
+	cout << "1 ";
+	
+	Print();
+	
+
+	system("pause>0");
+}
 /* 20
 using namespace std;
 
