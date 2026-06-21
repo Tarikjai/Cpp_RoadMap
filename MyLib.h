@@ -1,4 +1,5 @@
 #pragma once
+#include <string>
 #include <iostream>
 
 
@@ -21,6 +22,13 @@ namespace MyLib
 		} while (number < 0);
 
 		return number;
+	}
+
+	string Ask(string Message) {
+		string Text;
+		cout << Message;
+		getline(cin, Text);
+		return Text;
 	}
 
 }
