@@ -7,8 +7,17 @@ using namespace std;
 
 
 void Print() {
-
+	int Counter = 1;
+	int Sum = 2 ;
 	for (int i = 0; i < 10; i++) {
+
+		 
+		 
+		cout << Sum << " ";
+
+		Sum = Counter + Sum; 
+
+		Counter = Sum;
 		
 	}
 }
