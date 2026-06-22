@@ -28,7 +28,7 @@ string Print(string Texte) {
 
 int main() {
 	 
-	string  Texte = MyLib::Ask("Please Enter Your String?\n");
+	string  Texte = MyLib::Ask("Please  Enter Your String?\n");
 
 	cout << "String after conversion : \n" << Print(Texte);
 
