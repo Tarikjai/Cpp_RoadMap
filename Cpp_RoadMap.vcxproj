@@ -222,6 +222,7 @@
     <ClCompile Include="27_isUpper_Islower.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="28_invert_all_letters.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="24_UpperFirstletters..cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>

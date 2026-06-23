@@ -25,7 +25,7 @@ namespace MyLib
 		return number;
 	}
 
-	string Ask(string Message) {
+	string AskString(string Message) {
 		string Text;
 		cout << Message;
 		getline(cin, Text);
@@ -54,6 +54,13 @@ namespace MyLib
 		}
 		return Texte;
 	}
+
+	char invertChar(char Texte) {
+		return isupper(Texte) ? tolower(Texte) : toupper(Texte);
+	}
+
+
+
 
 
 }

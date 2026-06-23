@@ -255,6 +255,9 @@
     <ClCompile Include="27_isUpper_Islower.cpp">
       <Filter>Resource Files\Level_07</Filter>
     </ClCompile>
+    <ClCompile Include="28_invert_all_letters.cpp">
+      <Filter>Resource Files\Level_07</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyLib.h">
