@@ -216,6 +216,7 @@
     <ClCompile Include="25_LowerFirstLetter.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
+    <ClCompile Include="26_.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="24_UpperFirstletters..cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
