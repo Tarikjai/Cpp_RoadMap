@@ -6,32 +6,24 @@ using namespace std;
 
 
 
- 
-
-string Print(string Texte) {
-
-	bool  isFirstLetter = true;
-
-	for (int i = 0; i < Texte.length(); i++) {
-		
-
-		if (Texte[i] != ' ' && isFirstLetter) {
-			Texte[i] = tolower(Texte[i]);
-		}
-
-		isFirstLetter = (Texte[i]  ==  ' ' ? true : false);
-	}
-	return Texte;
-	
-
+bool CheckChar(char Texte) {
+	return isupper(Texte) ? tolower(Texte) : toupper(Texte);
 }
 
+
 int main() {
-	 
-	string  Texte = MyLib::Ask("Please  Enter Your String?\n");
+	char  Texte = MyLib::AskChar("Please  Enter a charachter?\n");
 
-	cout << "String after conversion : \n" << Print(Texte);
+	cout << "\n";
 
+	cout << "\Char after inversting caser : \n"  ;
+
+	if (CheckChar(Texte)) {
+		cout << char(tolower(Texte));
+	}
+	else {
+		cout << char(toupper(Texte));
+	}
 
 	system("pause>0");
 }

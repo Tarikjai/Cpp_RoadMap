@@ -1,7 +1,8 @@
 #pragma once
 #include <string>
 #include <iostream>
-
+#include <cstdlib>
+#include <cctype>
 
 using namespace std;
 
@@ -30,5 +31,29 @@ namespace MyLib
 		getline(cin, Text);
 		return Text;
 	}
+
+
+	char AskChar(string Message) {
+		char Text;
+		cout << Message;
+		cin >>Text;
+		return Text;
+	}
+
+
+	string UpperAllLeters(string Texte) {
+		for (int i = 0; i < Texte.length(); i++) {
+			Texte[i] = toupper(Texte[i]);
+		}
+		return Texte;
+	}
+
+	string LowerAllLeters(string Texte) {
+		for (int i = 0; i < Texte.length(); i++) {
+			Texte[i] = tolower(Texte[i]);
+		}
+		return Texte;
+	}
+
 
 }
