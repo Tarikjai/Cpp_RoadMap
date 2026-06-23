@@ -249,7 +249,7 @@
     <ClCompile Include="25_LowerFirstLetter.cpp">
       <Filter>Resource Files\Level_07</Filter>
     </ClCompile>
-    <ClCompile Include="26_.cpp">
+    <ClCompile Include="26_Upper_lower_all_charachters.cpp">
       <Filter>Resource Files\Level_07</Filter>
     </ClCompile>
   </ItemGroup>
