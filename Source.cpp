@@ -6,7 +6,7 @@ using namespace std;
 
 
 
-bool CheckChar(char Texte) {
+char CheckChar(char Texte) {
 	return isupper(Texte) ? tolower(Texte) : toupper(Texte);
 }
 
@@ -17,13 +17,9 @@ int main() {
 	cout << "\n";
 
 	cout << "\Char after inversting caser : \n"  ;
-
-	if (CheckChar(Texte)) {
-		cout << char(tolower(Texte));
-	}
-	else {
-		cout << char(toupper(Texte));
-	}
+	 
+	cout << CheckChar(Texte);
+	
 
 	system("pause>0");
 }

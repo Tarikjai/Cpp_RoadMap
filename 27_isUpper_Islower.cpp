@@ -6,29 +6,20 @@ using namespace std;
 
 
 
-bool CheckChar(char Texte) {
-	for (int i = 0; i < Texte.length(); i++) {
-
-		Texte[i] = toupper(Texte[i]);
-	}
-	return Texte;
-
+char CheckChar(char Texte) {
+	return isupper(Texte) ? tolower(Texte) : toupper(Texte);
 }
 
 
- 
-
-
-
-
 int main() {
-
-	char  Texte = MyLib::Ask("Please  Enter Your String?\n");
-
-	cout << "\nString after Upper : \n" << UpperAllLeters(Texte);
+	char  Texte = MyLib::AskChar("Please  Enter a charachter?\n");
 
 	cout << "\n";
 
-	cout << "\nString after Lower : \n" << LowerAllLeters(Texte);
+	cout << "\Char after inversting caser : \n";
+
+	cout << CheckChar(Texte);
+
+
 	system("pause>0");
 }
