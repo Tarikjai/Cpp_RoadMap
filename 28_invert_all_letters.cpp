@@ -19,7 +19,7 @@ string InvertAllLeters(string Texte) {
 
 
 int main() {
-	string   Texte = MyLib::AskString("Please  Enter your string?\n");
+	string   Texte = MyLib::AskString("Please Enter your string?\n");
 
 	cout << "\n";
 
