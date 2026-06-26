@@ -27,6 +27,5 @@ int main() {
 
 	cout << InvertAllLeters(Texte);
 
-
 	system("pause>0");
 }
