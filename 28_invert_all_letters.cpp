@@ -23,7 +23,7 @@ int main() {
 
 	cout << "\n";
 
-	cout << "\String after Inverting all  Letters Case : \n";
+	cout << "\String after Inverting all Letters Case : \n";
 
 	cout << InvertAllLeters(Texte);
 
