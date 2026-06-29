@@ -13,7 +13,7 @@ using namespace std;
 
 
 int main() {
-	  int 
+	   
 
 	system("pause>0");
 }
