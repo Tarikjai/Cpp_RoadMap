@@ -14,6 +14,7 @@ using namespace std;
 
 int main() {
 	   
-	test
+	
+
 	system("pause>0");
 }
