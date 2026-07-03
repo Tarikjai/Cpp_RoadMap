@@ -1,4 +1,5 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(538,5): warning MSB8028: The intermediate directory (Cpp_RoadMap\x64\Debug\) contains files shared from another project (Cpp_Level6.vcxproj).  This can lead to incorrect clean and rebuild behavior.
   Source.cpp
-C:\Users\Professional\Documents\C++\Cpp_RoadMap\Source.cpp(26,10): warning C4129: 'S': unrecognized character escape sequence
+C:\Users\Professional\Documents\C++\Cpp_RoadMap\Source.cpp(35,19): warning C4267: 'return': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Professional\Documents\C++\Cpp_RoadMap\Source.cpp(45,1): warning C4715: 'countLetters': not all control paths return a value
   Cpp_RoadMap.vcxproj -> C:\Users\Professional\Documents\C++\Cpp_RoadMap\x64\Debug\Cpp_RoadMap.exe
