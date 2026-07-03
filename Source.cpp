@@ -28,7 +28,7 @@ int CountLowerLetters(string s1) {
 }
 
 
-int countLetters(string s1, enWhatToCount WhattoCount) {
+int countLetters(string s1, enWhatToCount WhattoCount=enWhatToCount::all) {
 
 
 	if (WhattoCount == enWhatToCount::all) {
@@ -57,7 +57,7 @@ int main() {
 	cout << "\n";
 
 
-	cout << "\nString length = " << countLetters(s1, enWhatToCount::all);
+	cout << "\nString length = " << countLetters(s1);
 
 
 	cout << "\nCapital Letteres number = " << countLetters(s1, enWhatToCount::capitalLetter);
