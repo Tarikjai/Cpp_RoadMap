@@ -35,7 +35,6 @@ int countLetters(string s1, enWhatToCount WhattoCount=enWhatToCount::all) {
 		return s1.length();
 	}
 
-
 	if (WhattoCount== enWhatToCount::capitalLetter) {
 		return CountUpperLetters(s1);
 	}
