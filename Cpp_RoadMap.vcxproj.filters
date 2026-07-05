@@ -261,7 +261,10 @@
     <ClCompile Include="29_Count_Small_Capital_letters.cpp">
       <Filter>Resource Files\Level_07</Filter>
     </ClCompile>
-    <ClCompile Include="30_.cpp">
+    <ClCompile Include="30_Count_Numbers.cpp">
+      <Filter>Resource Files\Level_07</Filter>
+    </ClCompile>
+    <ClCompile Include="31_.cpp">
       <Filter>Resource Files\Level_07</Filter>
     </ClCompile>
   </ItemGroup>
