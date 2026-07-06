@@ -264,7 +264,7 @@
     <ClCompile Include="30_Count_Numbers.cpp">
       <Filter>Resource Files\Level_07</Filter>
     </ClCompile>
-    <ClCompile Include="31_.cpp">
+    <ClCompile Include="31_CountLetters_Match_Cases.cpp">
       <Filter>Resource Files\Level_07</Filter>
     </ClCompile>
   </ItemGroup>
