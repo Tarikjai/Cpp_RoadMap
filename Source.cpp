@@ -28,6 +28,5 @@ int main() {
 
 	cout << "\nLetter = '" << C << "' Or '" << MyLib::invertChar(C) << "' Count = " << Countall(S1, C, false);
 
-
 	system("pause>0");
 }
