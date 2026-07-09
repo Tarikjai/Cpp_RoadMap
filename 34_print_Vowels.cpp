@@ -6,27 +6,20 @@
 using namespace std;
 
 bool checkVowel(char c) {
-
 	c = tolower(c);
 	return (c == 'a') || (c == 'e') || (c == 'i') || (c == 'o') || (c == 'u');
-
 }
 
-int countVowels(string   S1) {
-
-	int count = 0;
+void PrintVowels(string   S1) {
+	cout << "Number of vowel is : ";
 	for (int i = 0; i < S1.length(); i++) {
 		if (checkVowel(S1[i])) {
-			count++;
+			cout << setw(5) << S1[i];
 		}
 	}
-	return count;
-
 }
 
 int main() {
-
 	string   S1 = MyLib::AskString("Please  Enter a String?\n");
-	cout << "Number of vowel is : " << countVowels(S1);
-
+	PrintVowels(S1);
 }

@@ -15,7 +15,7 @@ bool checkVowel(char c) {
 int countVowels(string   S1) {
 
 	int count = 0;
-	for (int i = 0; i < S1.length(); i++) {
+	for (int i = 0; i <S1.length(); i++) {
 		if (checkVowel(S1[i])) {
 			count++;
 		}

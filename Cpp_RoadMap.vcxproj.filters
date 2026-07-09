@@ -267,10 +267,21 @@
     <ClCompile Include="31_CountLetters_Match_Cases.cpp">
       <Filter>Resource Files\Level_07</Filter>
     </ClCompile>
+    <ClCompile Include="32_check_vowels.cpp">
+      <Filter>Resource Files\Level_07</Filter>
+    </ClCompile>
+    <ClCompile Include="34_print_Vowels.cpp">
+      <Filter>Resource Files\Level_07</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="MyLib.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="33._count_vowels.cpp">
+      <Filter>Resource Files\Level_07</Filter>
+    </None>
   </ItemGroup>
 </Project>
