@@ -21,7 +21,6 @@ int countVowels(string   S1) {
 		}
 	}
 	return count;
-
 }
 
 int main() {
