@@ -5,28 +5,23 @@
 
 using namespace std;
 
-bool checkVowel(char c) {
 
-	c = tolower(c);
-	return (c == 'a') || (c == 'e') || (c == 'i') || (c == 'o') || (c == 'u');
 
-}
+void countVowels(string   S1) {
 
-int countVowels(string   S1) {
+	
 
-	int count = 0;
 	for (int i = 0; i < S1.length(); i++) {
-		if (checkVowel(S1[i])) {
+		if (S1[i] == ' ') {
 			count++;
 		}
 	}
-	return count;
-
+ 
 }
 
 int main() {
 
-	string   S1 = MyLib::AskString("Please  Enter a String?\n");
+	string   S1 = "Mohammed Abu-Hadhoud @ProgrammingAdvices";/* MyLib::AskString("Please  Enter a String?\n");*/
 	cout << "Number of vowel is : " << countVowels(S1);
 
 }
