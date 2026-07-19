@@ -6,6 +6,48 @@
 
 using namespace std;
 
+
+void PrintEachWordInString(string s1) {
+
+	string delim = " ";
+
+	short pos = 0;
+	string sWord;
+
+	cout << "Your String words are : " << endl;
+
+	while ((pos = s1.find(delim)) != std::string::npos) {
+
+		sWord = s1.substr(0, pos);
+		if (sWord != "") {
+			cout << sWord << endl;
+
+		}
+
+		s1.erase(0, pos + delim.length());
+	}
+
+	if (s1 != "") {
+		cout << s1 << endl; 
+	}
+
+	
+
+}
+
+
+
+
+int main() {
+
+	string   S1 = "Mohammed Abu-Hadhoud @ProgrammingAdvices";/* MyLib::AskString("Please  Enter a String?\n");*/
+//	cout << "Your String words are : " << endl; 
+	PrintEachWordInString(S1);
+}
+
+
+/*
+
 void PrintEachWordInString(string S1)
 {
 	string delim = " "; // delimiter
@@ -23,7 +65,7 @@ void PrintEachWordInString(string S1)
 			cout << sWord << endl;
 		}
 		S1.erase(0, pos + delim.length()); /* erase() until
-		positon and move to next word. */
+		positon and move to next word. 
 	}
 
 
@@ -32,11 +74,4 @@ void PrintEachWordInString(string S1)
 		cout << S1 << endl; // it print last word of the string.
 	}
 }
-int main() {
-
-	string   S1 = "Mohammed Abu-Hadhoud @ProgrammingAdvices";/* MyLib::AskString("Please  Enter a String?\n");*/
-	cout << "Your String words are : " << endl; ;
-	PrintEachWordInString(S1);
-}
-
-
+*/
