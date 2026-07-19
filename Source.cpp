@@ -16,13 +16,12 @@ void PrintText(string   S1) {
 		else {
 			cout << endl;
 		}
-	
 	}
 }
 
 int main() {
 
 	string   S1 = "Mohammed Abu-Hadhoud @ProgrammingAdvices";/* MyLib::AskString("Please  Enter a String?\n");*/
-	cout << "Your String words are: " << endl; ;
+	cout << "Your String words are : " << endl; ;
 	PrintText(S1);
 }
