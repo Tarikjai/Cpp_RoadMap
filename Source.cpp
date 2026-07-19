@@ -6,22 +6,37 @@
 
 using namespace std;
 
-void PrintText(string   S1) {
+void PrintEachWordInString(string S1)
+{
+	string delim = " "; // delimiter
+	cout << "\nYour string wrords are: \n\n";
+	short pos = 0;
+	string sWord; // define a string variable
+	// use find() function to get the position of the delimiters
 
-	for (int i = 0; i < S1.length(); i++) {
-		
-		if (S1[i] != ' ') {
-			cout << S1[i];
+
+	while ((pos = S1.find(delim)) != std::string::npos)
+	{
+		sWord = S1.substr(0, pos); // store the word
+		if (sWord != "")
+		{
+			cout << sWord << endl;
 		}
-		else {
-			cout << endl;
-		}
+		S1.erase(0, pos + delim.length()); /* erase() until
+		positon and move to next word. */
+	}
+
+
+	if (S1 != "")
+	{
+		cout << S1 << endl; // it print last word of the string.
 	}
 }
-
 int main() {
 
 	string   S1 = "Mohammed Abu-Hadhoud @ProgrammingAdvices";/* MyLib::AskString("Please  Enter a String?\n");*/
 	cout << "Your String words are : " << endl; ;
-	PrintText(S1);
+	PrintEachWordInString(S1);
 }
+
+
