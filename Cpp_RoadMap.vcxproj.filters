@@ -273,7 +273,7 @@
     <ClCompile Include="34_print_Vowels.cpp">
       <Filter>Resource Files\Level_07</Filter>
     </ClCompile>
-    <ClCompile Include="35.cpp">
+    <ClCompile Include="35_PrintEachWordInString.cpp">
       <Filter>Resource Files\Level_07</Filter>
     </ClCompile>
   </ItemGroup>

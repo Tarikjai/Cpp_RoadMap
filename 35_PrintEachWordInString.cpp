@@ -12,7 +12,26 @@ void PrintEachWordInString(string s1) {
 
 	string delim = " ";
 
-	
+	string delim = " ";
+	short pos = 0;
+	string sWord;
+
+	while ((pos = s1.find(delim)) != std::string::npos) {
+
+		sWord = s1.substr(0, pos);
+
+		if (sWord != "") {
+			cout << sWord << endl;
+		}
+
+		s1.erase(0, pos + delim.length());
+	}
+
+	if (s1 != "") {
+		cout << s1 << endl;
+	}
+
+
 
 }
 
