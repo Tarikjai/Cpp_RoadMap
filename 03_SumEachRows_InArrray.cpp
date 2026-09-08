@@ -53,7 +53,7 @@ void SumMatrixRowsInArray(int arr[3][3], int Rows, int Column, int SumArr[3]) {
 
 void PrintRowsSumArray(int Arr[3], int Rows) {
 
-	cout << "\nThe following are the sum  for each row in the matrix :\n";
+	cout << "\nThe following are the summ  for each row in the matrix :\n";
 	for (int i = 0; i < Rows; i++) {
 		cout <<"Row " << i + 1 << " = " <<  Arr[i];
 		cout << endl;
