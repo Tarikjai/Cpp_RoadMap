@@ -1,75 +1,70 @@
 #include <iostream>
 #include <iomanip>
 #include "MyLib.h"
-#include <cctype>
-#include <vector>
 
 using namespace std;
 
 
-void fillRandomMatrix(int Matrix[3][3], int row, int cols) {
-	for (int i = 0; i < row; i++) {
-		for (int j = 0; j < cols; j++) {
-			Matrix[i][j] = MyLib::RandomNumber(1,10);
-		}
-	}
-}
+void FillMatrixWithRandomNumbers(int arr[3][3], int Rows, int Column) {
 
-void PrintRandomMatrix(int Matrix[3][3], int row, int cols) {
-	for (int i = 0; i < row; i++) {
-		for (int j = 0; j < cols; j++) {
-			cout << setw(3) << Matrix[i][j] << "    ";
+	for (int i = 0; i < Rows; i++) {
+		for (int j = 0; j < Column; j++) {
+			arr[i][j] = MyLib::RandomNumber(1, 5);
+		}
+
+	}
+
+}
+void PrintMatrix(int arr[3][3], int Rows, int Column) {
+
+	for (int i = 0; i < Rows; i++) {
+		for (int j = 0; j < Column; j++) {
+			cout << setw(3) << arr[i][j] << "   ";
 		}
 		cout << endl;
-	}
-	cout << endl;
-}
-
-int SumRows(int Matrix[3][3], int row, int cols) {
-	int counter = 0;
-
-		for (int i = 0; i < cols; i++) {
-			counter += Matrix[row][i];
-		}
-		
-		return counter;
-	
-}
-
-
-void fillSumArr(int ArrSum[3], int Matrix[3][3], int row, int cols) {
-	for (int i = 0; i < row; i++) {
-
-		ArrSum[i] = SumRows(Matrix, i, cols)  ;
-
 
 	}
+
 }
 
-void PrintSum(int ArrSum[3], int row, int cols) {
-	for (int i = 0; i < row; i++) {
 
-	  cout << "Sum " << i+1 <<" row: " << ArrSum[i] << endl;
-	 
-	
+
+int RowCols(int arr[3][3], int Rows, int Cols) {
+
+	int sum = 0;
+	for (int j = 0; j <= Rows - 1; j++) {
+		sum += arr[j][Cols];
 	}
-	
-	
+
+	return sum;
 }
 
+
+void PrintSumRows(int arr[3][3], int Rows, int Column) {
+
+	cout << "\nThe following are the sum  for each Cols in the matrix :\n";
+
+	for (int i = 0; i < Rows; i++) {
+
+
+		cout << " Row " << i + 1 << " Cols = " << RowCols(arr, Rows, i);
+		cout << endl;
+
+	}
+
+}
 
 
 int main() {
 
-	int Matrix[3][3];
-	int ArrSum[3];
+	int arr[3][3];
 
-	fillRandomMatrix(Matrix,3, 3);
-	cout << "The following is a 3x3 random matrix: " << endl;
-	PrintRandomMatrix(Matrix,3, 3);
-	
-	fillSumArr(ArrSum, Matrix, 3, 3);
 
-	cout << "The following are the sum of each row in the matrix:" << endl; 
-	PrintSum(ArrSum, 3, 3);
+	FillMatrixWithRandomNumbers(arr, 3, 3);
+	cout << "\n The following is a random matrix:\n";
+	PrintMatrix(arr, 3, 3);
+
+
+	PrintSumRows(arr, 3, 3);
+
 }

@@ -9,7 +9,7 @@ void FillMatrixWithRandomNumbers(int arr[3][3], int Rows, int Column) {
 
 	for (int i = 0; i < Rows; i++) {
 		for (int j = 0; j < Column; j++) {
-			arr[i][j] = MyLib::RandomNumber(1, 99);
+			arr[i][j] = MyLib::RandomNumber(1, 10);
 		}
 
 	}
@@ -27,11 +27,11 @@ void PrintMatrix(int arr[3][3], int Rows, int Column) {
 	}
 }
 
-int RowSum(int arr[3][3], int i, int Column) {
+int Rowclos(int arr[3][3], int row, int i) {
 
 	int sum = 0;
-	for (int j = 0; j <= Column - 1; j++) {
-		sum += arr[i][j];
+	for (int j = 0; j <= row - 1; j++) {
+		sum += arr[j][i];
 	}
 
 	return sum;
@@ -42,7 +42,7 @@ void SumMatrixRowsInArray(int arr[3][3], int Rows, int Column, int SumArr[3]) {
 
 	for (int i = 0; i < Rows; i++) {
 
-		 SumArr[i] = RowSum(arr, i, Column);
+		 SumArr[i] = Rowclos(arr, Rows, i);
 
 		cout << endl;
 	}

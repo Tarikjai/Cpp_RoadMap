@@ -29,7 +29,7 @@ void PrintMatrix(int arr[3][3], int Rows, int Column) {
 
 
 
-int RowSum(int arr[3][3], int i, int Column) {
+int RowCols(int arr[3][3], int i, int Column) {
 
 	int sum = 0;
 		for (int j = 0; j <= Column -1; j++) {
@@ -47,7 +47,7 @@ void PrintSumRows(int arr[3][3], int Rows, int Column) {
 	for (int i = 0; i < Rows; i++) {
 	
 	
-		cout << " Row " << i +1 << " Sum = " << RowSum( arr, i,  Column);
+		cout << " Row " << i +1 << " Sum = " << RowCols( arr, i,  Column);
 		cout << endl;
 
 	}
