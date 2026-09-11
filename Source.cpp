@@ -42,7 +42,7 @@ int RowCols(int arr[3][3], int Rows, int Cols) {
 
 void PrintSumRows(int arr[3][3], int Rows, int Column) {
 
-	cout << "\nThe following are the sum  for each Cols in the matrix :\n";
+	cout << "\nThe following are the summ  for each Cols in the matrix :\n";
 
 	for (int i = 0; i < Rows; i++) {
 
