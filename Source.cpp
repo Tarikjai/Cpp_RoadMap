@@ -4,67 +4,25 @@
 
 using namespace std;
 
+void GenerateRandomMatrix(int Matrix[3][3]){
 
-void FillMatrixWithRandomNumbers(int arr[3][3], int Rows, int Column) {
-
-	for (int i = 0; i < Rows; i++) {
-		for (int j = 0; j < Column; j++) {
-			arr[i][j] = MyLib::RandomNumber(1, 5);
-		}
-
-	}
-
-}
-void PrintMatrix(int arr[3][3], int Rows, int Column) {
-
-	for (int i = 0; i < Rows; i++) {
-		for (int j = 0; j < Column; j++) {
-			cout << setw(3) << arr[i][j] << "   ";
-		}
-		cout << endl;
-
-	}
+	for (int i =0; i >0 ;
 
 }
 
 
 
-int RowCols(int arr[3][3], int Rows, int Cols) {
-
-	int sum = 0;
-	for (int j = 0; j <= Rows - 1; j++) {
-		sum += arr[j][Cols];
-	}
-
-	return sum;
-}
 
 
-void PrintSumRows(int arr[3][3], int Rows, int Column) {
+int main(){
 
-	cout << "\nThe foollowing are the sum for each Col in the matrix :\n";
-
-	for (int i = 0; i < Rows; i++) {
+	int Matrix[3][3];
 
 
-		cout << " Row " << i + 1 << " Cols = " << RowCols(arr, Rows, i);
-		cout << endl;
+	GenerateRandomMatrix(Matrix);
+	PrintMatix(;)
 
-	}
+
 
 }
 
-
-int main() {
-
-	int arr[3][3];
-
-
-	FillMatrixWithRandomNumbers(arr, 3, 3);
-	cout << "\n The following is a random matrix:\n";
-	PrintMatrix(arr, 3, 3);
-
-
-	PrintSumRows(arr, 3, 3);
-
-}
