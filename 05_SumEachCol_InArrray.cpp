@@ -23,7 +23,7 @@ void PrintMatrix3X3(int arr[3][3], int Rows, int Cols) {
 }
 
 
-int SumCols(int arr[3][3], int Rows, int Cols) {
+int SumRows(int arr[3][3], int Rows, int Cols) {
 
 	int Sum = 0;
 	for (int i = 0; i < Rows; i++) {
@@ -38,7 +38,7 @@ void InputColsSum(int arr[3][3], int Rows, int Cols, int NewArr[3]) {
 	 
 	for (int i = 0; i <= Cols - 1; i++) {
 		 
-		NewArr[i] = SumCols(arr, Rows, i )  ;
+		NewArr[i] = SumRows(arr, Rows, i )  ;
 	}
 	cout << endl;
 }

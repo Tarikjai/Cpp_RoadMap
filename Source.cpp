@@ -22,7 +22,7 @@ void PrintMatrix(int Matrix[3][3], int rows, int cols) {
 }
 
 
-int SumCols(int Matrix[3][3], int rows, int cols) {
+int SumRows(int Matrix[3][3], int rows, int cols) {
 	int Sum = 0;
 	for (int j = 0; j < cols; j++) {
 		Sum += Matrix[rows][j];
@@ -35,13 +35,13 @@ void fillSumArray(int Matrix[3][3], int sumArr[3]) {
 	  
 	for (int i = 0; i < 3; i++) {
 		
-		sumArr[i] = SumCols(Matrix, i, 3);
+		sumArr[i] = SumRows(Matrix, i, 3);
 		cout << endl;
 	}
 }
 
 void PrintRowSum(int sumArr[3]) {
-	cout << "The following are the sum of each row in the matrix :" << endl;
+	cout << "The following ar e the sum of each row in the matrix :" << endl;
 	for (int i = 0; i < 3; i++) {
 
 		cout << "Row " << i + 1 << " sum = " << sumArr[i];
